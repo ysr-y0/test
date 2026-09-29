@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #bfe3f0;
+}
+
+/* loading indicator: a round cap being screwed on — no text */
+.cap-spinner {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 8px solid rgba(28, 58, 99, 0.16);
+  border-top-color: #ff9a5c;
+  border-right-color: #ffd45c;
+  animation: capspin 0.9s cubic-bezier(0.5, 0.1, 0.4, 0.9) infinite;
+}
+@keyframes capspin {
+  to {
+    transform: rotate(360deg);
+  }
+}
